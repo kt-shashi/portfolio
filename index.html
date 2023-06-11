@@ -3,231 +3,227 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive personal projects website design tutorail</title>
 
-    <!-- Font Awesome -->
+    <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" href="CSS/style.css">
 
-    <title>Shashi</title>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
+    <!-- header section starts  -->
+
     <header>
 
         <div class="user">
-            <img src="resources/profile-picture.jpg" alt="Profile Picture">
+            <img src="images/pic.jpg" alt="">
             <h3 class="name">Shashi Kant</h3>
-
-            <p class="post">Software Developer</p>
+            <p class="post"> Placement Coordinator @NIT JSR | Former Android Developer @Perform Digital </p>
         </div>
 
-        <!-- Navbar -->
-
         <nav class="navbar">
-
             <ul>
-                <li> <a href="#home">Home</a> </li>
-                <li> <a href="#about">About</a> </li>
-                <li> <a href="#experience">Experience</a> </li>
-                <li> <a href="#education">Eduation</a> </li>
-                <li> <a href="#projects">Projects</a> </li>
-                <li> <a href="#skills">Skills</a> </li>
-                <li> <a href="#coding">Coding Profiles</a> </li>
-                <li> <a href="#contact">Contact</a> </li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#coding">Coding Profiles</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-
         </nav>
 
     </header>
 
+    <!-- header section ends -->
+
     <div id="menu" class="fas fa-bars"></div>
 
-    <!-- Home -->
+    <!-- home section starts  -->
 
     <section class="home" id="home">
 
-        <h3>Hi there</h3>
-        <h1><span>I'm Shashi Kant</span></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, totam ea reiciendis eos cum accusamus quia
-            sunt ex sapiente nesciunt! Quod, assumenda laboriosam eaque repellendus nulla minus perferendis debitis,
-            consequatur porro officia earum dolores ipsa fuga. Cumque aspernatur architecto, ratione non maiores soluta
-            facilis, autem, laudantium pariatur nobis ad quaerat?</p>
-
-        <a href="#about">
-            <button class="btn">About me
-                <i class="fas fa-user"></i>
-            </button>
-        </a>
+        <h3>HI THERE !</h3>
+        <h1>I'm <span>Shashi</span></h1>
+        <p> A grad student who specializes in Data structures, Algorithms, DBMS and OOP, with expertise in Android
+            Development.
+        </p>
+        <a href=""><button class="btn">Github<i class="fas fa-user"></i></button></a>
+        <a href=""><button class="btn">LinkedIn<i class="fas fa-user"></i></button></a>
 
     </section>
 
-    <!-- About -->
-
-    <section class="about" id="about">
-
-        <h1 class="heading"><span>About</span> me</h1>
-
-        <div class="row">
-
-            <div class="info">
-
-                <h3> <span>Name:</span> Shashi Kant </h3>
-                <h3> <span>Education:</span>MCA, NIT Jamshedpur</h3>
-                <h3> <span>Role:</span>Software Developer</h3>
-                <h3> <span>Language:</span>English, Hindi</h3>
-
-            </div>
-
-        </div>
-
-        <div class="counter">
-
-            <div class="box">
-                <h3>Android development</h3>
-            </div>
-
-            <div class="box">
-                <h3>Web Development</h3>
-            </div>
-
-            <div class="box">
-                <h3>Open Source</h3>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Experience -->
+    <!-- experience section  -->
 
     <section class="experience" id="experience">
 
-        <h1>My <span>experience</span></h1>
+        <h1 class="heading"> my <span>experience</span> </h1>
 
-        <div class="box">
-            <img src="/resources/work.svg" alt="Work">
+        <div class="box-container">
 
-            <span>2023-present</span>
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2023-Present</span>
+                <h3>Placement Coordinator</h3>
+                <p>Training and Placement Cell at NIT Jamshedpur</p>
+            </div>
 
-            <h3>Placement Coordinator at MCA, NIT Jamshedpur</h3>
-        </div>
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Dec'20-Jan'21</span>
+                <h3>Android Developer Intern</h3>
+                <p>Conducted app localization and optimized layout rendering speed to enhance user experience, while
+                    also fixing memory
+                    leaks and bugs using debugging and profiling tools for the Groupalike App</p>
+            </div>
 
-        <div class="box">
-            <img src="/resources/android.svg" alt="Android">
-
-            <span>Dec 2020 - Jan 2021</span>
-
-            <h3>Android Developer, Perform Digital</h3>
         </div>
 
     </section>
 
-    <!-- Education -->
+    <!-- education section  -->
 
     <section class="education" id="education">
 
-        <h1 class="heading">My <span>education</span></h1>
+        <h1 class="heading"> my <span>education</span> </h1>
 
         <div class="box-container">
+
             <div class="box">
                 <i class="fas fa-graduation-cap"></i>
                 <span>2021-2024</span>
                 <h3>MCA, NIT Jamshedpur</h3>
+                <p>Learned and practiced DSA, became Placement Coordinator of MCA</p>
             </div>
 
             <div class="box">
                 <i class="fas fa-graduation-cap"></i>
                 <span>2018-2021</span>
-                <h3>BCA, George College</h3>
+                <h3>BCA, Geroge College</h3>
+                <p>Focused mostly on building android apps, also learned about web development</p>
             </div>
+
         </div>
 
     </section>
 
-    <!-- Projects -->
+    <!-- projects section starts  -->
 
     <section class="projects" id="projects">
 
-        <h1 class="heading">My <span>projects</span></h1>
+        <h1 class="heading"> my <span>projects</span> </h1>
 
         <div class="box-container">
-            <img src="resources/placeholder.svg" alt="">
-        </div>
 
-        <div class="box-container">
-            <img src="resources/placeholder.svg" alt="">
-        </div>
+            <div class="box">
+                <img src="images/pic.jpg" alt="">
+            </div>
 
-        <div class="box-container">
-            <img src="resources/placeholder.svg" alt="">
-        </div>
+            <div class="box">
+                <img src="images/pic.jpg" alt="">
+            </div>
 
-        <div class="box-container">
-            <img src="resources/placeholder.svg" alt="">
+            <div class="box">
+                <img src="images/pic.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <img src="images/pic.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <img src="images/pic.jpg" alt="">
+            </div>
+
+            <div class="box">
+                <img src="images/pic.jpg" alt="">
+            </div>
+
         </div>
 
     </section>
 
-    <!-- TODO: SKILLS -->
-
-    <!-- Coding Profiles -->
+    <!-- Coding profiles -->
 
     <section class="coding" id="coding">
 
-        <h1>My <span>coding profiles</span></h1>
+        <h1 class="heading"> <span>Coding</span> profiles </h1>
 
-        <div class="box">
-            <h3><a href="https://leetcode.com/shkt/">LeetCode</a></h3>
-        </div>
+        <div class="row">
 
-        <div class="box">
-            <h3><a href="https://auth.geeksforgeeks.org/user/shashikt/practice">GeeksForGeeks</a></h3>
-        </div>
+            <div class="counter">
 
-        <div class="box">
-            <h3><a href="https://www.codechef.com/users/kt_shashi">Codechef</a></h3>
+                <div class="box">
+                    <span>250+</span>
+                    <h3>LeetCode</h3>
+                </div>
+
+                <div class="box">
+                    <span>650+</span>
+                    <h3>GeeksForGeeks</h3>
+                </div>
+
+                <div class="box">
+                    <span>2*</span>
+                    <h3>CodeChef</h3>
+                </div>
+
+            </div>
+
         </div>
 
     </section>
 
-    <!-- Contact -->
+    <!-- contact section starts  -->
 
     <section class="contact" id="contact">
+
         <h1 class="heading"> <span>contact</span> me </h1>
+
         <div class="row">
+
             <div class="content">
+
                 <h3 class="title">contact info</h3>
+
                 <div class="info">
-                    <h3 class="lower"> <i class="fasfa-envelope"></i> service@freewebsitecode. com </h3>
-                    <h3> <i class="fa fa-phone"></i>
-                        +91-7044132891 </h3>
-                    <h3> <i class="fas fa-map-marker-alt"></i> California, USA 60598. </h3> -
+                    <h3> <i class="fas fa-envelope"></i> shkt03@gmail.com </h3>
+                    <h3> <i class="fas fa-phone"></i> +91-7044132891 </h3>
                 </div>
+
             </div>
+
             <form action="">
+
                 <input type="text" placeholder="name" class="box">
                 <input type="email" placeholder="email" class="box">
                 <input type="text" placeholder="project" class="box">
-                <textarea name=" ="" id="" cols=" 30" rows="10" class="box message" placeholder="message"></textarea>
-                <button type="submit" class="btn"> send <i class="fa fa-paper-plane"></i> </button>
+                <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+                <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
+
             </form>
+
         </div>
+
     </section>
 
-    <!-- Scroll to top -->
+    <!-- scroll top button  -->
 
     <a href="#home" class="top">
-        <img src="resources/top.svg" alt="Back to top">
+        <img src="images/scroll-top-img.png" alt="">
     </a>
 
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+
 </body>
-
-<!-- Jquery CDN link -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-<script src="js/script.js"></script>
 
 </html>

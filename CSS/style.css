@@ -1,7 +1,7 @@
 :root {
-  --theme-color: #00ccff;
-  --theme-background: #101820;
-  --nav-color: #007acc;
+  --theme-color: #44dee3;
+  --theme-background: #00001a;
+  --nav-color: #006080;
 }
 
 * {
@@ -115,7 +115,7 @@ header .navbar ul li a {
   display: block;
   padding: 1rem;
   margin: 1.5rem 0;
-  background: #333;
+  background: var(--theme-background);
   color: #fff;
   border-radius: 5rem;
   font-size: 2rem;

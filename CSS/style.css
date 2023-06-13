@@ -83,6 +83,17 @@ section {
   color: var(--yellow);
 }
 
+header .navbar {
+  height: calc(100% - 18rem); /* Adjust the height as needed */
+  overflow-y: auto;
+}
+
+header .navbar ul {
+  list-style: none;
+  padding: 1rem 3rem;
+  margin: 0;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -105,7 +116,7 @@ header .user img {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
-  border: 0.7rem solid var(--yellow);
+  border: 0.3rem solid var(--yellow);
 }
 
 header .user .name {
@@ -183,6 +194,229 @@ header .navbar ul li a:hover {
   padding: 1rem 0;
 }
 
+.experience .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Adjusted justify-content value */
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  padding-left: 3rem;
+}
+
+.experience .box-container .box {
+  width: 27rem;
+  margin: 4rem 0.5rem; /* Adjusted margin value */
+  padding-left: 4rem;
+  border-left: 0.2rem solid #fff;
+  position: relative;
+}
+
+.experience .box-container .box span {
+  font-size: 1.5rem;
+  background: #222;
+  color: #fff;
+  border-radius: 5rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.experience .box-container .box h3 {
+  font-size: 2rem;
+  color: #fff;
+  padding: 0.5rem 0;
+  margin-top: 1.5rem;
+}
+
+.experience .box-container .box p {
+  font-size: 1.4rem;
+  color: #eee;
+  line-height: 1.5;
+}
+
+.experience .box-container .box ul,
+.experience .box-container .box li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.experience .box-container .box ul li {
+  font-size: 1.4rem;
+  color: #eee;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.experience .box-container .box ul li::before {
+  content: "\2022"; /* Bullet character (Unicode) */
+  position: absolute;
+  left: 0;
+  color: #eee;
+}
+
+.experience .box-container .box i {
+  position: absolute;
+  top: -1.5rem;
+  left: -2.5rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #111;
+  background: var(--yellow);
+}
+
+.education .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Adjusted justify-content value */
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  padding-left: 3rem;
+}
+
+.education .box-container .box {
+  width: 27rem;
+  margin: 4rem 0.5rem; /* Adjusted margin value */
+  padding-left: 4rem;
+  border-left: 0.2rem solid #fff;
+  position: relative;
+}
+
+.education .box-container .box span {
+  font-size: 1.5rem;
+  background: #222;
+  color: #fff;
+  border-radius: 5rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.education .box-container .box h3 {
+  font-size: 2rem;
+  color: #fff;
+  padding: 0.5rem 0;
+  margin-top: 1.5rem;
+}
+
+.education .box-container .box p {
+  font-size: 1.4rem;
+  color: #eee;
+  line-height: 1.5;
+}
+
+.education .box-container .box i {
+  position: absolute;
+  top: -1.5rem;
+  left: -2.5rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #111;
+  background: var(--yellow);
+}
+
+.projects div p {
+  font-size: 1.6rem;
+  color: #333;
+  text-align: left;
+  margin: 2rem 0;
+  font-weight: bold;
+  color: var(--yellow);
+  text-transform: uppercase;
+}
+
+.projects .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 30rem);
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.projects .box-container .box {
+  height: 20rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.projects .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.2s linear;
+}
+
+.projects .box-container .box:hover img {
+  transform: scale(1.2);
+}
+
+.skills div p {
+  font-size: 1.6rem;
+  color: #333;
+  text-align: left;
+  margin: 2rem 0;
+  font-weight: bold;
+  color: var(--yellow);
+  text-transform: uppercase;
+}
+
+.skills .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+.skills .row .info {
+  flex: 1 1 48rem;
+  padding: 2rem 1rem;
+  padding-left: 6rem;
+}
+
+.skills .row .info h3 {
+  font-size: 2rem;
+  color: var(--yellow);
+  padding: 1rem 0;
+  font-weight: normal;
+}
+
+.skills .row .info h3 span {
+  color: #eee;
+  padding: 0 0.5rem;
+}
+
+.skills .row .counter {
+  flex: 1 1 48rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills .row .counter .box {
+  width: 20rem;
+  background: #222;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.skills .row .counter .box span {
+  font-size: 4rem;
+  color: var(--yellow);
+}
+
+.skills .row .counter .box h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+
 .coding .row {
   display: flex;
   align-items: center;
@@ -232,136 +466,6 @@ header .navbar ul li a:hover {
 .coding .row .counter .box h3 {
   font-size: 2rem;
   color: #fff;
-}
-
-.experience .box-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 1rem 0;
-  padding-left: 3rem;
-}
-
-.experience .box-container .box {
-  width: 27rem;
-  margin: 4rem 1rem;
-  padding-left: 4rem;
-  border-left: 0.2rem solid #fff;
-  position: relative;
-}
-
-.experience .box-container .box span {
-  font-size: 1.5rem;
-  background: #222;
-  color: #fff;
-  border-radius: 5rem;
-  padding: 0.5rem 1.5rem;
-}
-
-.experience .box-container .box h3 {
-  font-size: 2rem;
-  color: #fff;
-  padding: 0.5rem 0;
-  margin-top: 1.5rem;
-}
-
-.experience .box-container .box p {
-  font-size: 1.4rem;
-  color: #eee;
-  line-height: 1.5;
-}
-
-.experience .box-container .box i {
-  position: absolute;
-  top: -1.5rem;
-  left: -2.5rem;
-  height: 5rem;
-  width: 5rem;
-  border-radius: 50%;
-  line-height: 5rem;
-  text-align: center;
-  font-size: 2rem;
-  color: #111;
-  background: var(--yellow);
-}
-
-.education .box-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 1rem 0;
-  padding-left: 3rem;
-}
-
-.education .box-container .box {
-  width: 27rem;
-  margin: 4rem 1rem;
-  padding-left: 4rem;
-  border-left: 0.2rem solid #fff;
-  position: relative;
-}
-
-.education .box-container .box span {
-  font-size: 1.5rem;
-  background: #222;
-  color: #fff;
-  border-radius: 5rem;
-  padding: 0.5rem 1.5rem;
-}
-
-.education .box-container .box h3 {
-  font-size: 2rem;
-  color: #fff;
-  padding: 0.5rem 0;
-  margin-top: 1.5rem;
-}
-
-.education .box-container .box p {
-  font-size: 1.4rem;
-  color: #eee;
-  line-height: 1.5;
-}
-
-.education .box-container .box i {
-  position: absolute;
-  top: -1.5rem;
-  left: -2.5rem;
-  height: 5rem;
-  width: 5rem;
-  border-radius: 50%;
-  line-height: 5rem;
-  text-align: center;
-  font-size: 2rem;
-  color: #111;
-  background: var(--yellow);
-}
-
-.projects .box-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 30rem);
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-.projects .box-container .box {
-  height: 20rem;
-  border-radius: 1rem;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.projects .box-container .box img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  transition: 0.2s linear;
-}
-
-.projects .box-container .box:hover img {
-  transform: scale(1.2);
 }
 
 .contact .row {

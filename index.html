@@ -32,6 +32,7 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#opensource">open Source</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#coding">Coding Profiles</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -144,6 +145,8 @@
 
         <div>
             <p>WittyApe | Helping Kids Excel</p>
+            <a href="https://github.com/kt-shashi/wittyape"><img src="images/link.svg" alt="Link" class="link-svg"></a>
+
         </div>
 
         <div class="box-container">
@@ -164,6 +167,8 @@
 
         <div>
             <p>NewsDozz | Get your daily dose of NEWS</p>
+            <a href="https://github.com/kt-shashi/newsdozz"><img src="images/link.svg" alt="Link" class="link-svg"></a>
+
         </div>
 
         <div class="box-container">
@@ -183,6 +188,9 @@
 
         <div>
             <p>Blogmob | The blogging app</p>
+            <img src="images/link.svg" alt="Link" class="link-svg">
+            <a href="https://github.com/kt-shashi/blog-mob"><img src="images/link.svg" alt="Link" class="link-svg"></a>
+
         </div>
 
         <div class="box-container">
@@ -196,6 +204,53 @@
 
             <div class="box">
                 <img src="images/blogmob3.jpg" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Open Source -->
+
+    <section class="opensource" id="opensource">
+
+        <h1 class="heading"> <span>Open Source</span></h1>
+
+        <div class="row">
+
+            <div class="counter">
+
+                <div class="box">
+
+                    <span>UNIX</span>
+
+                    <ul>
+                        <li>UNIX Commands Project: Demonstrates essential UNIX commands and shell programming.</li>
+                        <li>Topics Covered: Calendar, directory operations, file operations, basic commands</li>
+                        <li>Includes Shell Scripting to automate tasks and enhance functionality.</li>
+                    </ul>
+
+                    <a href="https://github.com/kt-shashi/unix"><i>[Click Here]</i><img src="images/link.svg" alt="Link"
+                            class="link-svg"></a>
+
+                </div>
+
+                <div class="box">
+
+                    <span>LoginTemplateApp </span>
+
+                    <ul>
+                        <li>An Android app template for seamless signup and signin processes</li>
+                        <li>Features: Signup via email (with verification link) and Gmail, signin with email or Gmail,
+                            and create/update user profiles.</li>
+                        <li>Logout functionality ensures secure account signout.</li>
+                    </ul>
+
+                    <a href="https://github.com/kt-shashi/login-template"><i>[Click Here]</i><img src="images/link.svg"
+                            alt="Link" class="link-svg"></a>
+
+                </div>
+
             </div>
 
         </div>
@@ -339,7 +394,7 @@
 
     <section class="coding" id="coding">
 
-        <h1 class="heading"> <span>Coding</span> profiles </h1>
+        <h1 class="heading"> <span>Coding profiles</span></h1>
 
         <div class="row">
 
@@ -347,56 +402,64 @@
 
                 <div class="box">
                     <span>250+</span>
-                    <h3>LeetCode</h3>
+                    <h3>
+                        <img src="images/leetcode.svg" alt="LeetCode Logo" class="logo-svg">
+                        LeetCode
+                    </h3>
+
+                    <a href="https://leetcode.com/shkt/"><img src="images/link.svg" alt="Link" class="link-svg"></a>
+
                 </div>
 
                 <div class="box">
                     <span>650+</span>
-                    <h3>GeeksForGeeks</h3>
+                    <h3>
+                        <img src="images/gfg.svg" alt="LeetCode Logo" class="logo-svg">
+                        GeeksForGeeks
+                    </h3>
+
+                    <a href="https://auth.geeksforgeeks.org/user/shashikt/practice"><img src="images/link.svg"
+                            alt="Link" class="link-svg"></a>
+
                 </div>
 
                 <div class="box">
                     <span>2*</span>
-                    <h3>CodeChef</h3>
+                    <h3>
+                        <img src="images/codechef.svg" alt="LeetCode Logo" class="logo-svg">
+                        CodeChef
+                    </h3>
+
+                    <a href="https://www.codechef.com/users/kt_shashi"><img src="images/link.svg" alt="Link"
+                            class="link-svg"></a>
+
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
     <!-- contact section starts  -->
 
     <section class="contact" id="contact">
-
-        <h1 class="heading"> <span>contact</span> me </h1>
-
+        <h1 class="heading"> <span>contact me</span></h1>
         <div class="row">
-
             <div class="content">
-
                 <h3 class="title">contact info</h3>
-
                 <div class="info">
                     <h3> <i class="fas fa-envelope"></i> shkt03@gmail.com </h3>
                     <h3> <i class="fas fa-phone"></i> +91-7044132891 </h3>
                 </div>
-
             </div>
-
-            <form action="">
-
-                <input type="text" placeholder="name" class="box">
-                <input type="email" placeholder="email" class="box">
-                <input type="text" placeholder="project" class="box">
-                <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
-                <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
-
+            <form action="mailto:shkt03@gmail.com" method="post" enctype="text/plain">
+                <input type="hidden" name="subject" value="Contact Form Submission">
+                <input type="text" name="name" placeholder="name" class="box">
+                <input type="email" name="email" placeholder="email" class="box">
+                <input type="hidden" name="body" value="">
+                <textarea name="message" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+                <button type="submit" class="btn" onclick="updateBodyField()"> send <i class="fas fa-paper-plane"></i>
+                </button>
             </form>
-
         </div>
-
     </section>
 
     <!-- scroll top button  -->

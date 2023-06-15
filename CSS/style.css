@@ -2,6 +2,10 @@
 
 :root {
   --yellow: #f9ca24;
+  --theme-color: #92dbe7;
+  --theme-background: #00001a;
+  --theme-navbar: #000025;
+  --theme-box: #333;
 }
 
 * {
@@ -16,8 +20,8 @@
 }
 
 *::selection {
-  background: var(--yellow);
-  color: #333;
+  background: var(--theme-color);
+  color: var(--theme-box);
 }
 
 html {
@@ -34,11 +38,11 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: var(--yellow);
+  background: var(--theme-color);
 }
 
 body {
-  background: #111;
+  background: var(--theme-background);
   overflow-x: hidden;
   padding-left: 35rem;
 }
@@ -52,7 +56,7 @@ section {
 
 .btn {
   padding: 1rem 3rem;
-  background: #333;
+  background: var(--theme-box);
   color: #fff;
   cursor: pointer;
   margin-top: 1rem;
@@ -66,8 +70,8 @@ section {
 }
 
 .btn:hover {
-  background: var(--yellow);
-  color: #111;
+  background: var(--theme-color);
+  color: var(--theme-background);
 }
 
 .heading {
@@ -80,7 +84,7 @@ section {
 }
 
 .heading span {
-  color: var(--yellow);
+  color: var(--theme-color);
 }
 
 header .navbar {
@@ -101,7 +105,7 @@ header {
   z-index: 1000;
   height: 100%;
   width: 35rem;
-  background: #1a1a1a;
+  background: var(--theme-navbar);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -115,8 +119,8 @@ header .user img {
   width: 17rem;
   border-radius: 50%;
   object-fit: cover;
+  margin-top: 2rem;
   margin-bottom: 1rem;
-  border: 0.3rem solid var(--yellow);
 }
 
 header .user .name {
@@ -142,14 +146,14 @@ header .navbar ul li a {
   display: block;
   padding: 1rem;
   margin: 1.5rem 0;
-  background: #333;
+  background: var(--theme-box);
   color: #fff;
   font-size: 2rem;
   border-radius: 5rem;
 }
 
 header .navbar ul li a:hover {
-  background: var(--yellow);
+  background: var(--theme-color);
   color: #111;
 }
 
@@ -157,7 +161,7 @@ header .navbar ul li a:hover {
   position: fixed;
   top: 2rem;
   right: 2rem;
-  background: #333;
+  background: var(--theme-box);
   color: #fff;
   cursor: pointer;
   font-size: 2.5rem;
@@ -188,7 +192,7 @@ header .navbar ul li a:hover {
 }
 
 .home h1 span {
-  color: var(--yellow);
+  color: var(--theme-color);
 }
 
 .home p {
@@ -218,81 +222,9 @@ header .navbar ul li a:hover {
 
 /* Experience */
 
-.experience .box-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 1rem 0;
-  padding-left: 3rem;
+.experience {
+  padding-top: 200px;
 }
-
-.experience .box-container .box {
-  width: 27rem;
-  margin: 4rem 0.5rem;
-  padding-left: 4rem;
-  border-left: 0.2rem solid #fff;
-  position: relative;
-}
-
-.experience .box-container .box span {
-  font-size: 1.5rem;
-  background: #222;
-  color: #fff;
-  border-radius: 5rem;
-  padding: 0.5rem 1.5rem;
-}
-
-.experience .box-container .box h3 {
-  font-size: 2rem;
-  color: #fff;
-  padding: 0.5rem 0;
-  margin-top: 1.5rem;
-}
-
-.experience .box-container .box p {
-  font-size: 1.4rem;
-  color: #eee;
-  line-height: 1.5;
-}
-
-.experience .box-container .box ul,
-.experience .box-container .box li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.experience .box-container .box ul li {
-  font-size: 1.4rem;
-  color: #eee;
-  line-height: 1.5;
-  position: relative;
-  padding-left: 1.5rem;
-}
-
-.experience .box-container .box ul li::before {
-  content: "\2022";
-  position: absolute;
-  left: 0;
-  color: #eee;
-}
-
-.experience .box-container .box i {
-  position: absolute;
-  top: 0;
-  left: -2.5rem;
-  height: 5rem;
-  width: 5rem;
-  border-radius: 50%;
-  line-height: 5rem;
-  text-align: center;
-  font-size: 2rem;
-  color: #111;
-  background: var(--yellow);
-}
-
-/* Experience */
 
 .experience .box-container {
   display: flex;
@@ -365,10 +297,88 @@ header .navbar ul li a:hover {
   text-align: center;
   font-size: 2rem;
   color: #111;
-  background: var(--yellow);
+  background: var(--theme-color);
+}
+
+.experience .box-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  padding-left: 3rem;
+}
+
+.experience .box-container .box {
+  width: 27rem;
+  margin: 4rem 0.5rem;
+  padding-left: 4rem;
+  border-left: 0.2rem solid #fff;
+  position: relative;
+}
+
+.experience .box-container .box span {
+  font-size: 1.5rem;
+  background: #222;
+  color: #fff;
+  border-radius: 5rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.experience .box-container .box h3 {
+  font-size: 2rem;
+  color: #fff;
+  padding: 0.5rem 0;
+  margin-top: 1.5rem;
+}
+
+.experience .box-container .box p {
+  font-size: 1.4rem;
+  color: #eee;
+  line-height: 1.5;
+}
+
+.experience .box-container .box ul,
+.experience .box-container .box li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.experience .box-container .box ul li {
+  font-size: 1.4rem;
+  color: #eee;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.experience .box-container .box ul li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  color: #eee;
+}
+
+.experience .box-container .box i {
+  position: absolute;
+  top: 0;
+  left: -2.5rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--theme-background);
+  background: var(--theme-color);
 }
 
 /* Education */
+
+.education {
+  padding-top: 200px;
+}
 
 .education .box-container {
   display: flex;
@@ -418,8 +428,8 @@ header .navbar ul li a:hover {
   line-height: 5rem;
   text-align: center;
   font-size: 2rem;
-  color: #111;
-  background: var(--yellow);
+  color: var(--theme-background);
+  background: var(--theme-color);
 }
 
 /* Projects */
@@ -432,11 +442,11 @@ header .navbar ul li a:hover {
 
 .projects div p {
   font-size: 1.6rem;
-  color: #333;
+  color: var(--theme-box);
   text-align: left;
   margin: 0;
   font-weight: bold;
-  color: var(--yellow);
+  color: whitesmoke;
   text-transform: uppercase;
 }
 
@@ -469,7 +479,12 @@ header .navbar ul li a:hover {
 .projects .box-container .box:hover img {
   transform: scale(1.2);
 }
+
 /* Open Source */
+
+.opensource {
+  padding-top: 200px;
+}
 
 .opensource .row .counter {
   display: flex;
@@ -489,7 +504,7 @@ header .navbar ul li a:hover {
 
 .opensource .row .counter .box span {
   font-size: 2rem;
-  color: var(--yellow);
+  color: var(--theme-color);
   padding-bottom: 1rem;
   margin-top: 0;
   margin-bottom: 2rem;
@@ -528,18 +543,18 @@ header .navbar ul li a:hover {
 }
 
 .opensource .row .counter .box a:hover {
-  color: var(--yellow);
+  color: var(--theme-color);
 }
 
 /* Skills */
 
 .skills div p {
   font-size: 1.6rem;
-  color: #333;
+  color: var(--theme-box);
   text-align: left;
   margin: 2rem 0;
   font-weight: bold;
-  color: var(--yellow);
+  color: var(--theme-color);
   text-transform: uppercase;
 }
 
@@ -559,7 +574,7 @@ header .navbar ul li a:hover {
 
 .skills .row .info h3 {
   font-size: 2rem;
-  color: var(--yellow);
+  color: var(--theme-color);
   padding: 1rem 0;
   font-weight: normal;
 }
@@ -587,7 +602,7 @@ header .navbar ul li a:hover {
 
 .skills .row .counter .box span {
   font-size: 4rem;
-  color: var(--yellow);
+  color: var(--theme-color);
 }
 
 .skills .row .counter .box h3 {
@@ -596,6 +611,10 @@ header .navbar ul li a:hover {
 }
 
 /* Coding profiles */
+
+.coding {
+  padding-top: 200px;
+}
 
 .coding .row {
   display: flex;
@@ -625,7 +644,7 @@ header .navbar ul li a:hover {
 
 .coding .row .counter .box span {
   font-size: 4rem;
-  color: var(--yellow);
+  color: var(--theme-color);
 }
 
 .coding .row .counter .box h3 {
@@ -666,6 +685,10 @@ header .navbar ul li a:hover {
 
 /* Contact Me */
 
+.contact {
+  padding-top: 150px;
+}
+
 .contact .row {
   display: flex;
   align-items: center;
@@ -677,6 +700,7 @@ header .navbar ul li a:hover {
   flex: 1 1 30rem;
   padding: 4rem;
   padding-bottom: 0;
+  padding-bottom: 150px;
 }
 
 .contact .row form {
@@ -689,7 +713,8 @@ header .navbar ul li a:hover {
 .contact .row form .box {
   padding: 1.5rem;
   margin: 1rem 0;
-  background: #3333;
+  border-radius: 2%;
+  background: var(--theme-box);
   color: #fff;
   text-transform: none;
   font-size: 1.7rem;
@@ -718,7 +743,7 @@ header .navbar ul li a:hover {
 
 .contact .row .content .info h3 i {
   padding-right: 1rem;
-  color: var(--yellow);
+  color: var(--theme-color);
 }
 
 .contact .row .content .info h3:first-child {

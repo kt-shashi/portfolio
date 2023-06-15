@@ -170,8 +170,10 @@ header .navbar ul li a:hover {
 
 .home {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  flex-flow: column;
+  height: 100vh;
   padding: 0 15rem;
 }
 
@@ -194,6 +196,100 @@ header .navbar ul li a:hover {
   color: #aaa;
   line-height: 1.5;
   padding: 1rem 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  margin: 0 0 rem; /* Adjust the margin as desired */
+  background-color: transparent;
+}
+
+.social-links a img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Experience */
+
+.experience .box-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  padding-left: 3rem;
+}
+
+.experience .box-container .box {
+  width: 27rem;
+  margin: 4rem 0.5rem;
+  padding-left: 4rem;
+  border-left: 0.2rem solid #fff;
+  position: relative;
+}
+
+.experience .box-container .box span {
+  font-size: 1.5rem;
+  background: #222;
+  color: #fff;
+  border-radius: 5rem;
+  padding: 0.5rem 1.5rem;
+}
+
+.experience .box-container .box h3 {
+  font-size: 2rem;
+  color: #fff;
+  padding: 0.5rem 0;
+  margin-top: 1.5rem;
+}
+
+.experience .box-container .box p {
+  font-size: 1.4rem;
+  color: #eee;
+  line-height: 1.5;
+}
+
+.experience .box-container .box ul,
+.experience .box-container .box li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.experience .box-container .box ul li {
+  font-size: 1.4rem;
+  color: #eee;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.experience .box-container .box ul li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  color: #eee;
+}
+
+.experience .box-container .box i {
+  position: absolute;
+  top: 0;
+  left: -2.5rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #111;
+  background: var(--yellow);
 }
 
 /* Experience */
@@ -373,7 +469,6 @@ header .navbar ul li a:hover {
 .projects .box-container .box:hover img {
   transform: scale(1.2);
 }
-
 /* Open Source */
 
 .opensource .row .counter {
@@ -389,6 +484,7 @@ header .navbar ul li a:hover {
   padding: 2rem;
   margin: 2rem;
   padding-left: 4rem;
+  border-radius: 3%; /* Add border-radius property */
 }
 
 .opensource .row .counter .box span {
@@ -396,7 +492,7 @@ header .navbar ul li a:hover {
   color: var(--yellow);
   padding-bottom: 1rem;
   margin-top: 0;
-  margin-bottom: 2rem; /* Adjust the margin-bottom value as needed */
+  margin-bottom: 2rem;
 }
 
 .opensource .row .counter .box ul {
@@ -486,6 +582,7 @@ header .navbar ul li a:hover {
   text-align: center;
   padding: 2rem;
   margin: 2rem;
+  border-radius: 8%; /* Add border-radius property */
 }
 
 .skills .row .counter .box span {
@@ -508,20 +605,6 @@ header .navbar ul li a:hover {
   padding: 1rem 0;
 }
 
-.coding .row .info {
-  flex: 1 1 48rem;
-  padding: 2rem 1rem;
-  padding-left: 6rem;
-}
-
-.coding .row .counter .box h3 {
-  font-size: 2rem;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Add this line */
-}
-
 .coding .row .counter .box h3 .logo-svg {
   width: 2rem;
   height: 2rem;
@@ -540,14 +623,6 @@ header .navbar ul li a:hover {
   flex-wrap: wrap;
 }
 
-.coding .row .counter .box {
-  width: 20rem;
-  background: #222;
-  text-align: center;
-  padding: 2rem;
-  margin: 2rem;
-}
-
 .coding .row .counter .box span {
   font-size: 4rem;
   color: var(--yellow);
@@ -561,6 +636,32 @@ header .navbar ul li a:hover {
 .link-svg {
   width: 2rem;
   height: 2rem;
+}
+
+.coding .row .info {
+  flex: 1 1 48rem;
+  padding: 2rem;
+}
+
+.coding .row .counter .box h3 {
+  font-size: 2rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem; /* Add margin-top property */
+}
+
+.coding .row .counter .box {
+  width: 20rem;
+  background: #222;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Contact Me */
@@ -618,6 +719,10 @@ header .navbar ul li a:hover {
 .contact .row .content .info h3 i {
   padding-right: 1rem;
   color: var(--yellow);
+}
+
+.contact .row .content .info h3:first-child {
+  text-transform: lowercase; /* Convert email to lowercase */
 }
 
 /* Back to top */

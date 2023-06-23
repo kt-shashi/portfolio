@@ -4,7 +4,8 @@
   --yellow: #f9ca24;
   --theme-color: #92dbe7;
   --theme-background: #00001a;
-  --theme-navbar: #000025;
+  --theme-navbar: #000018;
+  /* --theme-navbar: #000025; */
   --theme-box: #333;
 }
 
@@ -45,6 +46,8 @@ body {
   background: var(--theme-background);
   overflow-x: hidden;
   padding-left: 35rem;
+  background-image: url(/images/bg.jpg);
+  background-size: contain;
 }
 
 section {
@@ -258,97 +261,18 @@ header .navbar ul li a:hover {
   margin-top: 1.5rem;
 }
 
-.experience .box-container .box p {
+.experience .box-container .box p,
+.experience .box-container .box ul,
+.experience .box-container .box li {
   font-size: 1.4rem;
   color: #eee;
   line-height: 1.5;
-}
-
-.experience .box-container .box ul,
-.experience .box-container .box li {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .experience .box-container .box ul li {
-  font-size: 1.4rem;
-  color: #eee;
-  line-height: 1.5;
-  position: relative;
-  padding-left: 1.5rem;
-}
-
-.experience .box-container .box ul li::before {
-  content: "\2022";
-  position: absolute;
-  left: 0;
-  color: #eee;
-}
-
-.experience .box-container .box i {
-  position: absolute;
-  top: 0;
-  left: -2.5rem;
-  height: 5rem;
-  width: 5rem;
-  border-radius: 50%;
-  line-height: 5rem;
-  text-align: center;
-  font-size: 2rem;
-  color: #111;
-  background: var(--theme-color);
-}
-
-.experience .box-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 1rem 0;
-  padding-left: 3rem;
-}
-
-.experience .box-container .box {
-  width: 27rem;
-  margin: 4rem 0.5rem;
-  padding-left: 4rem;
-  border-left: 0.2rem solid #fff;
-  position: relative;
-}
-
-.experience .box-container .box span {
-  font-size: 1.5rem;
-  background: #222;
-  color: #fff;
-  border-radius: 5rem;
-  padding: 0.5rem 1.5rem;
-}
-
-.experience .box-container .box h3 {
-  font-size: 2rem;
-  color: #fff;
-  padding: 0.5rem 0;
-  margin-top: 1.5rem;
-}
-
-.experience .box-container .box p {
-  font-size: 1.4rem;
-  color: #eee;
-  line-height: 1.5;
-}
-
-.experience .box-container .box ul,
-.experience .box-container .box li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.experience .box-container .box ul li {
-  font-size: 1.4rem;
-  color: #eee;
-  line-height: 1.5;
   position: relative;
   padding-left: 1.5rem;
 }
@@ -788,6 +712,9 @@ header .navbar ul li a:hover {
 
   body {
     padding: 0;
+    background: var(--theme-background-mobile);
+    background-image: url(/images/bg-phone.jpg);
+    background-size: contain;
   }
 }
 

@@ -122,7 +122,7 @@ header .user img {
   width: 17rem;
   border-radius: 50%;
   object-fit: cover;
-  margin-top: 2rem;
+  margin-top: 4rem;
   margin-bottom: 1rem;
 }
 
@@ -449,8 +449,6 @@ header .navbar ul li a:hover {
   padding-left: 1rem;
 }
 
-/* Open Source */
-
 .opensource .row .counter .box a {
   display: flex;
   align-items: center;
@@ -737,6 +735,10 @@ header .navbar ul li a:hover {
     width: 100%;
   }
 
+  .experience .box-container .box {
+    width: 100%;
+  }
+
   .education .box-container .box {
     width: 100%;
   }
@@ -747,5 +749,13 @@ header .navbar ul li a:hover {
 
   .contact .row form {
     margin: 3rem 0;
+  }
+
+  .opensource .row .counter .box {
+    width: 100%;
+  }
+
+  .coding .row .counter .box {
+    width: 100%;
   }
 }

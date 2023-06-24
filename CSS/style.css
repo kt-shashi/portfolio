@@ -469,67 +469,49 @@ header .navbar ul li a:hover {
 }
 
 /* Skills */
+.skills {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: white;
+  border-radius: 2px;
+}
 
-.skills div p {
-  font-size: 1.6rem;
+.heading {
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.column {
+  flex-basis: 33.33%;
+  max-width: 33.33%;
+  padding: 5px;
+}
+
+.column p {
+  font-size: 1.8rem;
   color: var(--theme-box);
-  text-align: left;
+  text-align: center;
   margin: 2rem 0;
   font-weight: bold;
   color: var(--theme-color);
   text-transform: uppercase;
 }
 
-.skills .row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 1rem 0;
+.skills .row .box {
+  background-color: #222;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
 }
 
-.skills .row .info {
-  flex: 1 1 48rem;
-  padding: 2rem 1rem;
-  padding-left: 6rem;
-}
-
-.skills .row .info h3 {
-  font-size: 2rem;
-  color: var(--theme-color);
-  padding: 1rem 0;
-  font-weight: normal;
-}
-
-.skills .row .info h3 span {
-  color: #eee;
-  padding: 0 0.5rem;
-}
-
-.skills .row .counter {
-  flex: 1 1 48rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.skills .row .counter .box {
-  width: 20rem;
-  background: #222;
-  text-align: center;
-  padding: 2rem;
-  margin: 2rem;
-  border-radius: 8%; /* Add border-radius property */
-}
-
-.skills .row .counter .box span {
-  font-size: 4rem;
-  color: var(--theme-color);
-}
-
-.skills .row .counter .box h3 {
-  font-size: 2rem;
-  color: #fff;
+.box h3 {
+  margin: 0;
 }
 
 /* Coding profiles */

@@ -25,6 +25,10 @@
   color: var(--theme-box);
 }
 
+img {
+  pointer-events: none;
+}
+
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -108,13 +112,15 @@ header {
   z-index: 1000;
   height: 100%;
   width: 35rem;
-  background: var(--theme-navbar);
+  /* background: var(--theme-navbar); */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column;
   text-align: center;
   transition: 0.2s linear;
+
+  backdrop-filter: blur(4px);
 }
 
 header .user img {
@@ -124,6 +130,10 @@ header .user img {
   object-fit: cover;
   margin-top: 4rem;
   margin-bottom: 1rem;
+}
+
+header .user p {
+  padding: 5px;
 }
 
 header .user .name {
@@ -149,15 +159,15 @@ header .navbar ul li a {
   display: block;
   padding: 1rem;
   margin: 1.5rem 0;
-  background: var(--theme-box);
-  color: #fff;
+  background: var(--theme-background);
+  color: white;
   font-size: 2rem;
   border-radius: 5rem;
 }
 
 header .navbar ul li a:hover {
   background: var(--theme-color);
-  color: #111;
+  color: black;
 }
 
 #menu {

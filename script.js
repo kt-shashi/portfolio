@@ -34,3 +34,7 @@ function updateBodyField() {
   var message = document.querySelector(".message").value;
   document.querySelector('input[name="body"]').value = message;
 }
+
+// document.addEventListener("contextmenu", (event) => {
+//   event.preventDefault();
+// });
